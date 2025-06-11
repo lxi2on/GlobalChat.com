@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Registro + Chat</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-theme="light">
+  <div class="container" id="auth">
+    <h2>Registro</h2>
+    <input type="email" id="regEmail" placeholder="Correo Gmail" required>
+    <input type="password" id="regPass" placeholder="Contraseña" required>
+    <button onclick="register()">Registrarse</button>
+    <hr>
+    <h2>Iniciar Sesión</h2>
+    <input type="email" id="loginEmail" placeholder="Correo Gmail" required>
+    <input type="password" id="loginPass" placeholder="Contraseña" required>
+    <button onclick="login()">Entrar</button>
+  </div>
+
+  <div class="container chat" id="chatArea">
+    <h2>Chat en Línea</h2>
+    <div class="messages" id="messages"></div>
+    <input type="text" id="chatInput" placeholder="Escribe un mensaje...">
+    <input type="file" id="fileInput" accept="image/*,video/*">
+    <button onclick="sendMessage()">Enviar</button>
+    <div class="theme-toggle" onclick="toggleTheme()">🌙 Cambiar Tema</div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
