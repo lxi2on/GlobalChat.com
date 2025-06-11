@@ -1,0 +1,68 @@
+:root {
+  --bg: #ffffff;
+  --text: #000000;
+  --input: #f0f0f0;
+}
+[data-theme="dark"] {
+  --bg: #121212;
+  --text: #f0f0f0;
+  --input: #1e1e1e;
+}
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.container {
+  background-color: var(--input);
+  padding: 20px;
+  border-radius: 15px;
+  width: 350px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+input, button {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 8px;
+}
+button {
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+.chat {
+  display: none;
+  flex-direction: column;
+}
+.messages {
+  height: 300px;
+  overflow-y: auto;
+  background: var(--bg);
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+.message {
+  background: #e1e1e1;
+  padding: 8px;
+  margin: 5px 0;
+  border-radius: 6px;
+  color: #000;
+}
+.dark .message {
+  background: #333;
+  color: #fff;
+}
+.theme-toggle {
+  margin-top: 10px;
+  text-align: center;
+  cursor: pointer;
+}

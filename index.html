@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat Firebase</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="script.js" defer></script>
+</head>
+<body data-theme="light">
+  <div class="container" id="auth">
+    <h2>Registro</h2>
+    <input type="email" id="regEmail" placeholder="Correo Gmail">
+    <input type="password" id="regPass" placeholder="Contraseña">
+    <button id="registerBtn">Registrarse</button>
+    <hr>
+    <h2>Iniciar Sesión</h2>
+    <input type="email" id="loginEmail" placeholder="Correo Gmail">
+    <input type="password" id="loginPass" placeholder="Contraseña">
+    <button id="loginBtn">Entrar</button>
+  </div>
+
+  <div class="container chat" id="chatArea">
+    <h2>Chat en Línea</h2>
+    <button id="logoutBtn">Cerrar sesión</button>
+    <div class="messages" id="messages"></div>
+    <input type="text" id="chatInput" placeholder="Escribe un mensaje...">
+    <input type="file" id="fileInput" accept="image/*,video/*">
+    <button id="sendBtn">Enviar</button>
+    <div class="theme-toggle" id="themeToggle">🌙 Cambiar Tema</div>
+  </div>
+</body>
+</html>
