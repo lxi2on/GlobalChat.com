@@ -1,33 +1,55 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Chat Firebase</title>
-  <link rel="stylesheet" href="style.css">
-  <script type="module" src="script.js" defer></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Chat Online</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body data-theme="light">
-  <div class="container" id="auth">
-    <h2>Registro</h2>
-    <input type="email" id="regEmail" placeholder="Correo Gmail">
-    <input type="password" id="regPass" placeholder="Contraseña">
-    <button id="registerBtn">Registrarse</button>
-    <hr>
-    <h2>Iniciar Sesión</h2>
-    <input type="email" id="loginEmail" placeholder="Correo Gmail">
-    <input type="password" id="loginPass" placeholder="Contraseña">
-    <button id="loginBtn">Entrar</button>
-  </div>
+  <header>
+    <button id="menuBtn" class="menu-btn">☰</button>
+    <h1>Chat Online</h1>
+    <button id="themeToggle">🌙 Cambiar Tema</button>
+  </header>
 
-  <div class="container chat" id="chatArea">
-    <h2>Chat en Línea</h2>
-    <button id="logoutBtn">Cerrar sesión</button>
-    <div class="messages" id="messages"></div>
-    <input type="text" id="chatInput" placeholder="Escribe un mensaje...">
-    <input type="file" id="fileInput" accept="image/*,video/*">
-    <button id="sendBtn">Enviar</button>
-    <div class="theme-toggle" id="themeToggle">🌙 Cambiar Tema</div>
-  </div>
+  <nav id="sidebar" class="sidebar">
+    <button id="closeBtn" class="close-btn">✕</button>
+    <ul>
+      <li><a href="#" id="logoutNav">Cerrar sesión</a></li>
+      <li><a href="archivos.html">Archivos</a></li>
+    </ul>
+
+    <section id="profileSection">
+      <img id="profilePic" src="" alt="Foto Perfil" class="profile-pic" />
+      <input type="text" id="userNameInput" placeholder="Nombre de usuario" />
+      <input type="file" id="userPhotoInput" accept="image/*" />
+      <button id="saveProfileBtn">Guardar perfil</button>
+      <div id="userNameDisplay"></div>
+    </section>
+  </nav>
+
+  <main>
+    <section id="auth">
+      <h2>Registro</h2>
+      <input id="regEmail" type="email" placeholder="Correo electrónico" />
+      <input id="regPass" type="password" placeholder="Contraseña" />
+      <button id="registerBtn">Registrarse</button>
+
+      <h2>Iniciar sesión</h2>
+      <input id="loginEmail" type="email" placeholder="Correo electrónico" />
+      <input id="loginPass" type="password" placeholder="Contraseña" />
+      <button id="loginBtn">Entrar</button>
+    </section>
+
+    <section id="chatArea" style="display:none;">
+      <div id="messages" class="messages"></div>
+      <input id="chatInput" type="text" placeholder="Escribe un mensaje..." />
+      <input id="fileInput" type="file" />
+      <button id="sendBtn">Enviar</button>
+    </section>
+  </main>
+
+  <script type="module" src="script.js"></script>
 </body>
 </html>
