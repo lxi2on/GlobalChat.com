@@ -7,7 +7,8 @@ import {
   onAuthStateChanged,
   signOut,
   updateProfile,
-} import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/11.9.1/firebase-auth.js";
+} 
+import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/11.9.1/firebase-auth.js";
 import {
   getFirestore,
   collection,
@@ -16,13 +17,16 @@ import {
   orderBy,
   onSnapshot,
   serverTimestamp,
-} import { getFirestore } from "https://www.gstatic.com/firebasejs/11.9.1/firebase-firestore.js";
+} 
+import { getFirestore } from "https://www.gstatic.com/firebasejs/11.9.1/firebase-firestore.js";
 import {
   getStorage,
   ref,
   uploadBytes,
   getDownloadURL,
-} import { getStorage } from "https://www.gstatic.com/firebasejs/11.9.1/firebase-storage.js";
+} 
+import { getStorage } from "https://www.gstatic.com/firebasejs/11.9.1/firebase-storage.js";
+
 // Tu configuración Firebase aquí
 const firebaseConfig = {
   apiKey: "AIzaSyB6dx-0rPO3zKyJm7Pr6s1vmeWX-yI62HU",
