@@ -26,12 +26,12 @@ import {
 
 // Tu configuración Firebase aquí
 const firebaseConfig = {
-  apiKey: "TU_API_KEY",
-  authDomain: "TU_AUTH_DOMAIN",
-  projectId: "TU_PROJECT_ID",
-  storageBucket: "TU_STORAGE_BUCKET",
-  messagingSenderId: "TU_MESSAGING_SENDER_ID",
-  appId: "TU_APP_ID",
+  apiKey: "AIzaSyB6dx-0rPO3zKyJm7Pr6s1vmeWX-yI62HU",
+  authDomain: "mi-chat-201ce.firebaseapp.com",
+  projectId: "mi-chat-201ce",
+  storageBucket: "mi-chat-201ce.firebasestorage.app",
+  messagingSenderId: "957131962302",
+  appId: "1:957131962302:web:fe755364cf088b0911abef"
 };
 
 const app = initializeApp(firebaseConfig);
