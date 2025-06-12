@@ -8,7 +8,7 @@ import {
   signOut,
   updateProfile,
 } 
-import { getAuth } from "https://www.gstatic.com/firebasejs/11.9.1/firebase-auth.js";
+import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/11.9.1/firebase-auth.js";
 import {
   getFirestore,
   collection,
