@@ -1,5 +1,5 @@
 // archivos.js
-import { initializeApp } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-app.js";
+import { initializeApp } from "https://www.gstatic.com/firebasejs/11.9.1/firebase-app.js";
 import {
   getAuth,
   createUserWithEmailAndPassword,
@@ -7,7 +7,7 @@ import {
   onAuthStateChanged,
   signOut,
   updateProfile,
-} from "https://www.gstatic.com/firebasejs/9.23.0/firebase-auth.js";
+} import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/11.9.1/firebase-auth.js";
 import {
   getFirestore,
   collection,
@@ -16,14 +16,14 @@ import {
   orderBy,
   onSnapshot,
   serverTimestamp,
-} from "https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore.js";
+} import { getFirestore } from "https://www.gstatic.com/firebasejs/11.9.1/firebase-firestore.js";
 import {
   getStorage,
   ref,
   uploadBytes,
   getDownloadURL,
   listAll,
-} from "https://www.gstatic.com/firebasejs/9.23.0/firebase-storage.js";
+} import { getStorage } from "https://www.gstatic.com/firebasejs/11.9.1/firebase-storage.js";
 
 // Configuración Firebase (igual que script.js)
 const firebaseConfig = {
