@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Archivos Compartidos</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-theme="light">
+  <header>
+    <button id="menuBtn" class="menu-btn">☰</button>
+    <h1>Archivos Compartidos</h1>
+    <button id="themeToggle">🌙 Cambiar Tema</button>
+  </header>
+
+  <nav id="sidebar" class="sidebar">
+    <button id="closeBtn" class="close-btn">✕</button>
+    <ul>
+      <li><a href="index.html">Chat</a></li>
+      <li><a href="#" id="logoutNav">Cerrar sesión</a></li>
+    </ul>
+
+    <section id="profileSection">
+      <img id="profilePic" src="" alt="Foto Perfil" class="profile-pic" />
+      <input type="text" id="userNameInput" placeholder="Nombre de usuario" />
+      <input type="file" id="userPhotoInput" accept="image/*" />
+      <button id="saveProfileBtn">Guardar perfil</button>
+      <div id="userNameDisplay"></div>
+    </section>
+  </nav>
+
+  <main>
+    <section id="auth">
+      <h2>Registro</h2>
+      <input id="regEmail" type="email" placeholder="Correo electrónico" />
+      <input id="regPass" type="password" placeholder="Contraseña" />
+      <button id="registerBtn">Registrarse</button>
+
+      <h2>Iniciar sesión</h2>
+      <input id="loginEmail" type="email" placeholder="Correo electrónico" />
+      <input id="loginPass" type="password" placeholder="Contraseña" />
+      <button id="loginBtn">Entrar</button>
+    </section>
+
+    <section id="fileSection" style="display:none;">
+      <h2>Subir archivo</h2>
+      <input id="uploadFileInput" type="file" />
+      <button id="uploadFileBtn">Subir</button>
+
+      <h2>Archivos disponibles</h2>
+      <div id="fileList" class="file-list"></div>
+    </section>
+  </main>
+
+  <script type="module" src="archivos.js"></script>
+</body>
+</html>
